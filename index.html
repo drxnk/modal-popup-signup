@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form popUpModal</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="c">
+      <button id="cadastro">Cadastre-se</button>
+    </div>
+
+    <form class="form" id="form">
+      <button id="close">
+        <span class="material-icons"> cancel </span>
+      </button>
+
+      <h2>Cadastro</h2>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="seuemail@email.com" required/>
+
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" name="senha" required />
+
+      <label for="c-senha">Confirmar senha</label>
+      <input type="password" id="c-senha" name="senha" required />
+
+      <div aria-label="checkbox">
+        <input type="checkbox" id="privacidade" name="privacidade" required/>
+        <label id="pri-t" for="privacidade"
+          >Concordo com as <a href="#">politicas e privacidades</a></label
+        >
+      </div>
+      <button id="create" >Criar Conta</button>
+    </form>
+
+    <footer>
+      <p>
+        Desenvolvido por
+        <a href="https://github.com/drxnk" target="_blank">Luiz Felipe</a>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
